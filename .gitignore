@@ -31,3 +31,8 @@ Thumbs.db
 # Configurações locais
 # =========================
 .env
+
+# =========================
+# Classe de teste manual
+# =========================
+src/main/java/com/academia_cli/TestConnection.java
