@@ -23,7 +23,7 @@ public class AlunoRepository {
             stmt.setString(3, aluno.getTel());
             stmt.setString(4, aluno.getEmail());
             stmt.setString(5, aluno.getCurso());
-            stmt.setDate(6, java.sql.Date.valueOf(aluno.getDataNascimento())); // ✅ posição correta
+            stmt.setDate(6, java.sql.Date.valueOf(aluno.getDataNascimento())); 
             stmt.setLong(7, aluno.getIdPlano());
 
             stmt.executeUpdate();
@@ -47,7 +47,7 @@ public class AlunoRepository {
                 a.setId(rs.getLong("id"));
                 a.setNome(rs.getString("nome"));
                 a.setCpf(rs.getString("cpf"));
-                a.setTel(rs.getString("telefone")); // ✅ nome correto da coluna
+                a.setTel(rs.getString("telefone"));
                 a.setEmail(rs.getString("email"));
                 a.setCurso(rs.getString("curso"));
 
